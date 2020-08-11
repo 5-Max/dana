@@ -9,7 +9,20 @@
     <title>Shears a go-go</title>
   </head>
   <style>
+    .container-fluid {
+      display: flex;
+      flex-direction: column;
+    }
 
+    .container-fluid section:first-child {
+      display: flex;
+      margin-bottom: 0px;
+    }
+
+    .container-fluid img {
+      width: 125px;
+      height: auto;
+    }
   </style>
 
   <body>
@@ -37,9 +50,9 @@
     </nav>
 
     <div class="container-fluid">  
-      <div class="row" style="background-color: #E296EB; background-size: cover;">
-        <img id="big" class="col-10 col-sm-10" title="Photo" src="./pics/collageBig.jpg">
-      </div>
+      <section class="row justify-content-center" style="background-color: #E296EB; background-size: cover;">
+        <img class="col-10 col-sm-10" title="Photo" src="./pics/collageBig.jpg">
+      </section>
     </div>
 
 
